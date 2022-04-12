@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #173248;
+}
+
+.grilla {
+    display:grid;
+    grid-template-areas: 
+    "header header "
+    "contenidoP contenidoP"
+    "footer footer";
+    grid-template-rows: 100px auto 75px;
+    grid-template-columns: 20% auto 15%;
+}
+#header {
+    margin-top: 10px;
+    grid-area: header;
+}
+
+
+@media (max-width: 768px) {
+    #header {
+        align-items: center;
+       position: absolute;
+       display:inline-block;
+       flex-direction: row;
+        
+    }
+}
+#menu {
+    position: relative;
+    background-color: #173248;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    float: right;
+    margin-top: 10px;
+    
+}
+
+
+
+
+.logoHeader  {
+    
+    margin-left: 10px;
+   
+}
+@media (min-width: 768px) {
+    .logoHeader {
+        align-items: center;
+        
+        float:center;
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    padding: 5px 15px;
+    margin-right:10px;
+    border-radius: 10px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu__nav > li {
+    float:left;
+}
+
+.menu__nav li a {
+    background-color:#173248;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.menu__nav li a:hover {
+    background-color:#00D858;
+    color: #fff;
+}
+
+.menu__nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    top:100%;
+    padding: 0;
+}
+
+.menu__nav li:hover > ul {
+    display:block;
+}
+
+.menu__nav li ul li {
+    position:relative;
+}
+.menu__nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+.contenidoP {
+    grid-area: contenidoP;
+}
+.imagenP{
+    margin-top: 1px;
+    width: 1330px;
+    float: left;
+}
+#footer {
+    grid-area: footer;
+ 
+}
+.footerUl {
+    text-align : right;
+    float: right;
+     display: inline-block;
+    flex-direction: row;
+    position:relative;
+}
+
+.footerImagen {
+    float: right;
+margin-top: 15px;
+   
+}
+
