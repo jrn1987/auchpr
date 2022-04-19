@@ -11,16 +11,16 @@
     <title>Auch PR - Consultoría para tu pyme</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark"> 
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"> 
+    <div class="container-fluid d-flex px-0">
+      <a class="navbar-brand d-flex align-items-right" href="#">
         <img class="animaLogo" src="./assets/img/logo.png" alt="..." height="40">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav d-flex align-items-left">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
@@ -35,9 +35,9 @@
               Servicios
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Marketing Digital</a></li>
-              <li><a class="dropdown-item" href="#">Consultoría</a></li>
-              <li><a class="dropdown-item" href="#">Estrategias inbound/outbound</a></li>
+              <li><a class="dropdown-item text-white" href="#">Marketing Digital</a></li>
+              <li><a class="dropdown-item text-white" href="#">Consultoría</a></li>
+              <li><a class="dropdown-item text-white" href="#">Estrategias inbound/outbound</a></li>
             </ul>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
@@ -53,10 +53,90 @@
 
  
       <body>
-        <section>
-            <img src="./assets/img/slider.png" class="img-fluid" alt="AuchPR">
-          </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active container-fluid">
+                <img src=".//assets/img/slider.png" class="d-block w-100" alt="AuchPR">
+              </div>
+              <div class="carousel-item container">
+                <img src=".//assets/img/slider.png" class="d-block w-100" alt="AuchPR">
+              </div>
+              <div class="carousel-item container">
+                <img src=".//assets/img/slider.png" class="d-block w-100" alt="AuchPR">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
+        
+             <!-- Services Section -->
+         <section class="services-section">
+            <div class="auto-container">
+               <div class="inner-container">
+                  <div class="row clearfix">
+                     <!-- Services Block -->
+                     <div id="caracteristicas" class="services-block col-lg-12" style="margin-bottom: 0; border: 0;">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="padding: 20px 0 0;">
+                           <div class="content">
+<div class="sec-title centered" style="margin-bottom: 0;">
+                  <h2 class="titulo-section">Servicios</h2>
+               </div>
+			   </div>
+                        </div>
+                     </div>
+                     <!-- Services Block -->
+                     <div class="services-block col-lg-3 col-md-12 col-sm-12">
+                        <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                           <div class="content">
+                              <div class="icon"><img src="./assets/icons/1.png"></div>
+                              <h4>Marketing Digital</h4>
+                              <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat odio modi aliquid magni minus placeat, iure ipsam odit repudiandae hic iste unde quos eligendi ullam? Doloremque eius voluptas doloribus debitis.</div>
+                           </div>
+                        </div>
+                     </div>
+             <!-- Services Block -->
+             <div class="services-block col-lg-3 col-md-12 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
+                   <div class="content">
+                      <div class="icon"><img src="./assets/icons/2.png"></div>
+                      <h4>Consultoría</h4>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique ut obcaecati accusantium cum accusamus rerum. Commodi optio recusandae impedit eius nemo magni dolores totam rerum, ratione dolorem ullam facilis?</div>
+                   </div>
+                </div>
+             </div>
+             <!-- Services Block -->
+             <div class="services-block col-lg-3 col-md-12 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
+                   <div class="content">
+                    <div class="icon"><img src="./assets/icons/3.png"></div>
+                      <h4>Estrategias inbound/outbound</h4>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem! Beatae consequuntur aut corrupti fugit dignissimos accusamus accusantium quod reprehenderit magni ullam, assumenda quaerat, rem cupiditate, nam autem eum dolor.</div>
+                   </div>
+                </div>
+             </div>
+             <!-- Services Block -->
+             <div class="services-block col-lg-3 col-md-12 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                   <div class="content">
+                      <div class="icon"><img src="./assets/icons/4.png"></div>
+                      <h4>Mucho más</h4>
+                      <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis alias, quia nobis ullam delectus, fuga quam nulla, quos laborum dolorem repellendus voluptatum. Suscipit recusandae aperiam in, totam possimus corrupti!</div>
+                   </div>
+                </div>
+             </div>
+             <a href="#contactenos" id="contacto" class="theme-btn btn-style-four"><span class="txt">CONTACTARME CON UN ASESOR </span></a>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- End Services Section -->
          
 </body>
 
