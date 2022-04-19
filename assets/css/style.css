@@ -146,6 +146,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
     
   }
 }
@@ -154,4 +155,13 @@ li {
     color: white;
     background-color: #3a7cb3;
     border-color: #3a7cb3;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+.form-group {
+    background-color:#173248;
 }
