@@ -1,7 +1,7 @@
-*{
+* {
     background-color: #173248;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border: none;
     outline: none;
 }
@@ -12,88 +12,76 @@ li {
 }
 
 .animaLogo {
-        animation-duration: 5s;
-        animation-name: animLogo;
-        animation-iteration-count: infinite;
-      }
-    @keyframes animLogo{
-        from {
-            -webkit-transform: rotate(0deg);
-            transform: rotateY(0deg);
-        }
-        50%{
-            -webkit-transform: rotate(180deg);
-            transform: rotateY(180deg);
-        } to {
-            -webkit-transform: rotate(360deg);
-            transform: rotateY(360deg);
-            }
-    }
-
-
-.dropdown-menu  {
-    background-color: #00D858;
-   
+    animation-duration: 5s;
+    animation-name: animLogo;
+    animation-iteration-count: infinite;
 }
+
+@keyframes animLogo {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.dropdown-menu {
+    background-color: #00D858;
+}
+
 .dropdown-item {
     background-color: #00D858;
     font-weight: bold;
-   
 }
+
 .navbar-nav {
-    float:left;
+    float: left;
     margin: 0;
     left: 76%;
     transform: translatex(-50%);
     position: relative;
 }
 
-
 @media (min-width: 0px) and (max-width: 412px) {
     .carousel {
         margin-bottom: 68px;
     }
-
-
-  /* Declare heights because of positioning of img element */
-  .carousel .item {
-    min-width: 80%;
-    background-color: #173248;
-  }
-  
-  .carousel-inner > .item > img {
-    min-width: 100%;
-    height: 100%;
-  
-  }
-   }
-  
-
-   @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-    .carousel {
-        margin-bottom: 0px;
+    .carousel .item {
+        min-width: 80%;
+        background-color: #173248;
     }
-
-
-  /* Declare heights because of positioning of img element */
-  .carousel .item {
-    min-width: 80%;
-    background-color: #173248;
-  }
-  
-  .carousel-inner > .item > img {
-    min-width: 100%;
-    height: 100%;
+    .carousel-inner > .item > img {
+        min-width: 100%;
+        height: 100%;
+    }
 }
-  
-      
-  }
-  
+
+@media (min-width: 412px) and (max-width: 768px) {
+    .carousel {
+        margin-bottom: 0;
+    }
+    .carousel .item {
+        min-width: 80%;
+        background-color: #173248;
+    }
+    .carousel-inner > .item > img {
+        min-width: 100%;
+        height: 100%;
+    }
+}
 
 .text {
-    color: white; 
+    color: white;
 }
-.titulo-section  {
+
+.titulo-section {
     color: white;
 }
 
@@ -103,11 +91,10 @@ li {
     padding-bottom: 50px;
     background-color: #173248;
 }
-
-.services-section .inner-container{
-	position:relative;
-	z-index:10;
-	margin-top:-110px;
+.services-section .inner-container {
+    position: relative;
+    z-index: 10;
+    margin-top: -110px;
 }
 
 .services-block {
@@ -115,14 +102,14 @@ li {
     margin-bottom: 30px;
     padding: 0;
     border-bottom: 3px solid #00D858;
-	background-color:#173248;
+    background-color: #173248;
 }
 
-.services-block .inner-box{
-	position:relative;
-	padding:45px 30px;
-	overflow:hidden;
-	background-color:#173248;
+.services-block .inner-box {
+    position: relative;
+    padding: 45px 30px;
+    overflow: hidden;
+    background-color: #173248;
 }
 
 .services-block .inner-box .content {
@@ -139,6 +126,7 @@ li {
     font-weight: bold;
     font-size: 19px;
 }
+
 .btn-primary {
     color: white;
     background-color: #00D858;
@@ -147,10 +135,7 @@ li {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    
-  }
 }
-
 .btn-primary:hover {
     color: white;
     background-color: #3a7cb3;
@@ -163,5 +148,5 @@ label {
 }
 
 .form-group {
-    background-color:#173248;
+    background-color: #173248;
 }

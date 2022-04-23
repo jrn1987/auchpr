@@ -1,0 +1,162 @@
+$primary-color: #173248;
+$secondary-color: #00D858;
+$font-color: white;
+
+* {
+    background-color: $primary-color;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+li {
+    color: $font-color;
+    background-color: white;
+}
+
+.animaLogo {
+    animation-duration: 5s;
+    animation-name: animLogo;
+    animation-iteration-count: infinite;
+}
+@keyframes animLogo {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.dropdown-menu {
+    background-color: $secondary-color;
+
+}
+.dropdown-item {
+    background-color: $secondary-color;
+    font-weight: bold;
+
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    left: 76%;
+    transform: translatex(-50%);
+    position: relative;
+}
+
+@media (min-width: 0px) and (max-width: 412px) {
+    .carousel {
+        margin-bottom: 68px;
+    }
+
+    .carousel .item {
+        min-width: 80%;
+        background-color: $primary-color;
+    }
+
+    .carousel-inner > .item > img {
+        min-width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media (min-width: 412px) and (max-width: 768px) {
+    .carousel {
+        margin-bottom: 0;
+    }
+
+    .carousel .item {
+        min-width: 80%;
+        background-color: $primary-color;
+    }
+
+    .carousel-inner > .item > img {
+        min-width: 100%;
+        height: 100%;
+    }
+
+}
+
+.text {
+    color: $font-color;
+}
+.titulo-section {
+    color: $font-color;
+}
+
+.services-section {
+    padding-top: 10%;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: $primary-color;
+
+    .inner-container {
+        position: relative;
+        z-index: 10;
+        margin-top: -110px;
+
+    }
+}
+
+.services-block {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0;
+    border-bottom: 3px solid $secondary-color;
+    background-color: $primary-color;
+}
+    .services-block .inner-box {
+        position: relative;
+        padding: 45px 30px;
+        overflow: hidden;
+        background-color: $primary-color;
+    }
+    .services-block .inner-box .content {
+            position: relative;
+            text-align: center;
+        }
+        .services-block .inner-box h4 {
+                position: relative;
+                color: $font-color;
+                text-transform: uppercase;
+                margin-top: 10px;
+                margin-bottom: 16px;
+                font-weight: bold;
+                font-size: 19px;
+            
+        
+    }
+
+.btn-primary {
+    color: $font-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    &:hover {
+        color: $font-color;
+        background-color: #3a7cb3;
+        border-color: #3a7cb3;
+    }
+}
+
+label {
+    color: $font-color;
+    font-weight: bold;
+}
+
+.form-group {
+    background-color: $primary-color;
+}
