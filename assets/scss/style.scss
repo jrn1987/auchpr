@@ -103,7 +103,7 @@ li {
     padding-bottom: 50px;
     background-color: $primary-color;
 
-    .inner-container {
+   .services-section .inner-container {
         position: relative;
         z-index: 10;
         margin-top: -110px;
@@ -118,14 +118,14 @@ li {
     border-bottom: 3px solid $secondary-color;
     background-color: $primary-color;
 }
-.inner-box {
-    @extend .services-block;
+.services-block .inner-box  {
+
     position: relative;
     padding: 45px 30px;
     overflow: hidden;
     background-color: $primary-color;
 }
-.content .inner-box {
+.content .services-block .inner-box {
 
     position: relative;
     text-align: center;
