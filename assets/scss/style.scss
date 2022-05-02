@@ -5,6 +5,10 @@ $redes: (
     instagram: #97197c,
     linkedin: #0076b8,
 );
+$fontSize: (
+    grosor: bold,
+    tamano: 19px,
+);
 
 * {
     background-color: $primary-color;
@@ -174,11 +178,14 @@ label {
     }
 }
 
-@mixin fontSize ($weight, $size) {
-    font-weight: $weight;
-    font-size: $size;
+@mixin grosorT ($fuente) {
+   @if map-has-key($fontSize, $fuente){
+  
+
+   }
 }
 
-h4 {
-    @include fontSize(bold, 19px)
+.principalT {
+    font-size: map-get($fontSize, tamano);
+    font-weight: map-get($fontSize, grosor);
 }

@@ -3,195 +3,132 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: none;
-}
+  outline: none; }
 
 li {
   color: white;
-  background-color: white;
-}
+  background-color: white; }
 
 .animaLogo {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: animLogo;
-          animation-name: animLogo;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes animLogo {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotateY(180deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotateY(360deg);
-  }
-}
+  animation-duration: 5s;
+  animation-name: animLogo;
+  animation-iteration-count: infinite; }
 
 @keyframes animLogo {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotateY(0deg);
-  }
+    transform: rotateY(0deg); }
   50% {
     -webkit-transform: rotate(180deg);
-    transform: rotateY(180deg);
-  }
+    transform: rotateY(180deg); }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotateY(360deg);
-  }
-}
+    transform: rotateY(360deg); } }
 
 .dropdown-menu, .dropdown-item {
-  background-color: #00D858;
-}
+  background-color: #00D858; }
 
 .dropdown-item {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .navbar-nav {
   float: left;
   margin: 0;
   left: 76%;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
-  position: relative;
-}
+  transform: translatex(-50%);
+  position: relative; }
 
 @media (min-width: 0px) and (max-width: 412px) {
   .carousel {
-    margin-bottom: 68px;
-  }
+    margin-bottom: 68px; }
   .carousel .item {
     min-width: 80%;
-    background-color: #173248;
-  }
+    background-color: #173248; }
   .carousel-inner > .item > img {
     min-width: 100%;
-    height: 100%;
-  }
-}
+    height: 100%; } }
 
 @media (min-width: 412px) and (max-width: 768px) {
   .carousel {
-    margin-bottom: 0;
-  }
+    margin-bottom: 0; }
   .carousel .item {
     min-width: 80%;
-    background-color: #173248;
-  }
+    background-color: #173248; }
   .carousel-inner > .item > img {
     min-width: 100%;
-    height: 100%;
-  }
-}
+    height: 100%; } }
 
 .text {
-  color: white;
-}
+  color: white; }
 
 .titulo-section {
-  color: white;
-}
+  color: white; }
 
 .services-section {
   padding-top: 10%;
   position: relative;
   padding-bottom: 50px;
-  background-color: #173248;
-}
-
-.services-section .services-section .inner-container {
-  position: relative;
-  z-index: 10;
-  margin-top: -110px;
-}
+  background-color: #173248; }
+  .services-section .services-section .inner-container {
+    position: relative;
+    z-index: 10;
+    margin-top: -110px; }
 
 .services-block {
   position: relative;
   margin-bottom: 30px;
   padding: 0;
   border-bottom: 3px solid #00D858;
-  background-color: #173248;
-}
+  background-color: #173248; }
 
 .services-block .inner-box {
   position: relative;
   padding: 45px 30px;
   overflow: hidden;
-  background-color: #173248;
-}
+  background-color: #173248; }
 
 .content .services-block .inner-box {
   position: relative;
-  text-align: center;
-}
+  text-align: center; }
 
 .services-block .inner-box h4 {
   position: relative;
   color: white;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
 .btn-primary {
   color: white;
   background-color: #00D858;
   border-color: #00D858;
-  font-weight: bold;
-}
-
-.btn-primary:hover {
-  color: white;
-  background-color: #3a7cb3;
-  border-color: #3a7cb3;
-}
+  font-weight: bold; }
+  .btn-primary:hover {
+    color: white;
+    background-color: #3a7cb3;
+    border-color: #3a7cb3; }
 
 label {
   color: white;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .form-group {
-  background-color: #173248;
-}
+  background-color: #173248; }
 
 .red--instagram {
-  background: #97197c;
-}
-
-.red--instagram:hover {
-  background: white;
-}
-
-.red--instagram:hover .red__nombre {
-  color: #97197c;
-}
+  background: #97197c; }
+  .red--instagram:hover {
+    background: white; }
+    .red--instagram:hover .red__nombre {
+      color: #97197c; }
 
 .red--linkedin {
-  background: #0076b8;
-}
+  background: #0076b8; }
+  .red--linkedin:hover {
+    background: white; }
+    .red--linkedin:hover .red__nombre {
+      color: #0076b8; }
 
-.red--linkedin:hover {
-  background: white;
-}
-
-.red--linkedin:hover .red__nombre {
-  color: #0076b8;
-}
-
-h4 {
-  font-weight: bold;
+.principalT {
   font-size: 19px;
-}
-/*# sourceMappingURL=style.css.map */
+  font-weight: bold; }
