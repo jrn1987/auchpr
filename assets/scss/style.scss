@@ -1,6 +1,10 @@
 $primary-color: #173248;
 $secondary-color: #00D858;
 $font-color: white;
+$redes: (
+    instagram: #97197c,
+    linkedin: #0076b8,
+);
 
 * {
     background-color: $primary-color;
@@ -40,7 +44,7 @@ li {
 
 }
 .dropdown-item {
-    background-color: $secondary-color;
+    @extend .dropdown-menu;
     font-weight: bold;
 
 }
@@ -114,35 +118,32 @@ li {
     border-bottom: 3px solid $secondary-color;
     background-color: $primary-color;
 }
-    .services-block .inner-box {
-        position: relative;
-        padding: 45px 30px;
-        overflow: hidden;
-        background-color: $primary-color;
-    }
-    .services-block .inner-box .content {
-            position: relative;
-            text-align: center;
-        }
-        .services-block .inner-box h4 {
-                position: relative;
-                color: $font-color;
-                text-transform: uppercase;
-                margin-top: 10px;
-                margin-bottom: 16px;
-                font-weight: bold;
-                font-size: 19px;
-            
-        
-    }
+.inner-box {
+    @extend .services-block;
+    position: relative;
+    padding: 45px 30px;
+    overflow: hidden;
+    background-color: $primary-color;
+}
+.content .inner-box {
+
+    position: relative;
+    text-align: center;
+}
+.services-block .inner-box h4 {
+    position: relative;
+    color: $font-color;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 16px;
+
+}
 
 .btn-primary {
     color: $font-color;
     background-color: $secondary-color;
     border-color: $secondary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     font-weight: bold;
 
     &:hover {
@@ -159,4 +160,25 @@ label {
 
 .form-group {
     background-color: $primary-color;
+}
+
+@each $red, $color in $redes {
+    .red--#{$red} {
+        background: $color;
+        &:hover {
+            background: white;
+            .red__nombre {
+                color: $color;
+            }
+        }
+    }
+}
+
+@mixin fontSize ($weight, $size) {
+    font-weight: $weight;
+    font-size: $size;
+}
+
+h4 {
+    @include fontSize(bold, 19px)
 }
